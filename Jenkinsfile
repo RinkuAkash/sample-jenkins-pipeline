@@ -6,6 +6,7 @@ pipeline {
 			steps {
 				script {
 					sh """
+					rm -r sample-jenkins-pipeline
 					git clone https://github.com/RinkuAkash/sample-jenkins-pipeline.git
 					sudo apt-get install python-is-python3
 					python -m venv test-jenkins-env
