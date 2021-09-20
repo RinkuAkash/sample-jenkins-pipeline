@@ -6,7 +6,8 @@ pipeline {
                         steps {
                                 script {
                                         sh """
-                                        cd /home/ubuntu/Downloads/sample-jenkins-pipeline
+                                        git clone https://github.com/RinkuAkash/sample-jenkins-pipeline.git
+                                        cd sample-jenkins-pipeline
                                         pip install -r requirements.txt
                                         python main.py
                                         python test/testMain.py
