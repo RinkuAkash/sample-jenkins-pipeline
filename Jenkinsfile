@@ -7,10 +7,10 @@ pipeline {
 				script {
 					sh """
 					cd sample-jenkins-pipeline
-					python3 -m venv test-jenkins-env
+					/usr/bin/python3 -m venv test-jenkins-env
 					test-jenkins-env/Scripts/activate.bat
-					pip3 install -r requirements.txt
-					python main.py
+					/usr/bin/pip3 install -r requirements.txt
+					/usr/bin/python3 main.py
 					"""
 				}
 			}
